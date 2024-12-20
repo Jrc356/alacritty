@@ -1,0 +1,28 @@
+[general]
+import = ["./moonlight_ii_vscode.toml"]
+
+[window]
+padding = { x = 20, y = 20 }
+dynamic_padding = true
+
+[font]
+normal = { family = "MesloLGS NF", style = "Regular" }
+size = 18.0
+
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+  { key = "T", mods = "Command", action = "CreateNewTab" },
+  { key = "Tab", mods = "Control", action = "SelectNextTab" },
+  { key = "Tab", mods = "Shift | Control", action = "SelectPreviousTab" },
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left", mods = "Alt", chars = "\u001BB" },
+  { key = "Comma", mods = "Command", command = { program = "nvim", args = [
+    "~/.config/alacritty/alacritty.yml",
+  ] } },
+  { key = "Back", mods = "Command", chars = "\u0015" },
+  { key = "Left", mods = "Command", chars = "\u001bOH", mode = "AppCursor" }, # Home
+  { key = "Right", mods = "Command", chars = "\u001bOF", mode = "AppCursor" }, # End
+]
