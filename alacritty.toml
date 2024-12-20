@@ -1,5 +1,5 @@
 [general]
-import = ["./moonlight_ii_vscode.toml"]
+import = ["./iris.toml"]
 
 [window]
 padding = { x = 20, y = 20 }
